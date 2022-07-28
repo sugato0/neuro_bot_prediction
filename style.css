@@ -1,38 +1,23 @@
-
-
-html,
-body {
-    margin: 0;
-    padding: 0;
-}
-
-html {
-    font-size: 10px;
-
-}
-
-body {
-    width: 70%;
-    min-width: 800px;
-    margin: 0 auto;
-}
-
-/* || typography */
-
-
-
-
-
-/* || header layout */
-
-header {
-    margin-bottom: 10px;
+div.mains{
+    margin-left:5%;
+    width:80%;
     display: flex;
-    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center
+
+    flex-direction: column;
+    flex-wrap: wrap;
 }
-
-
-
+div.included{
+    margin-left:20%;
+    margin-top:50px;
+}
+img {
+    width:90%
+}
+a {
+  text-decoration: none;
+}
 
 
 
@@ -49,8 +34,4 @@ main {
     display: flex;
 }
 
-article,
-section {
-    flex: 4;
-}
 

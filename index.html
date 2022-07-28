@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Neuro numbers prediction</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
@@ -9,6 +10,43 @@
 
 </head>
 <body>
-    <p class="fs-1">.fs-1 text</p>
+    <div class = "mains">
+        <div class="included">
+            <h1 class="title">Нейронная сеть для распознавания рукописных цифр</h1>
+
+        </div>
+        <div class="included">
+            <p class="fw-semibold"><--- Сделали ---></p>
+            <p class="fw-normal">Сахаров Данила: @SugatoKavary(telegramm) </p>
+            <p class="fw-normal">Попова Александра: @zvukii_paniki(telegramm) </p>
+            <p class="fw-normal">Марьяна Молчанова-Великая: @kotoylitka(telegramm) </p>
+        </div>
+        <div class="included">
+            <p class="text-break">Neuro bot - это нейронная сеть для расспознавания
+            цивр, написанных на обычном белом листке бумаги и чтобы разобраться во всей архитектуре давайте начнем с самой базы</p>
+        </div>
+        <div class ="included">
+            <p class="fw-semibold">Обработка изображения</p>
+        </div>
+        <div class="shadow-lg p-3 mb-5 bg-body rounded included">
+            <img src="image_processing.png">
+        </div>
+        <div class="included"><p class="text-break">Обработка изображения разделиласть на 3 подкатегории : </p>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <p class="fw-normal">Обрезка изображения: обрезаем изображения до формы квадрата для того чтоб при уменьшении
+                наше изображение не сжималось</p>
+              </li>
+              <li class="nav-item">
+                <p class="fw-normal">Превод изображения из RGB в градацию серого: так как мы обучали нашу нейронную сеть
+                на черно-белых изображениях то и на вход мы должны отдать идентичное</p>
+              </li>
+              <li class="nav-item">
+                <p class="fw-normal">Изменение размера: переводим наше изображение в формат 28 на 28 пикселей</p>
+              </li>
+
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
