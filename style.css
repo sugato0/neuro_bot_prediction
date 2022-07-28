@@ -1,0 +1,56 @@
+
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+
+}
+
+body {
+    width: 70%;
+    min-width: 800px;
+    margin: 0 auto;
+}
+
+/* || typography */
+
+
+
+
+
+/* || header layout */
+
+header {
+    margin-bottom: 10px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* || main layout */
+
+main {
+    display: flex;
+}
+
+article,
+section {
+    flex: 4;
+}
+
