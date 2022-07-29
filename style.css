@@ -8,6 +8,12 @@ div.mains{
     flex-direction: column;
     flex-wrap: wrap;
 }
+.row_add{
+    width:100%;
+}
+.flex-column {
+    margin-left:2%;
+}
 div.included{
     margin-left:20%;
     margin-top:50px;

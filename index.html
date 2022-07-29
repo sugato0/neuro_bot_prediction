@@ -22,8 +22,10 @@
             <p class="fw-normal">Марьяна Молчанова-Великая: @kotoylitka(telegramm) </p>
         </div>
         <div class="included">
-            <p class="text-break">Neuro bot - это нейронная сеть для расспознавания
-            цивр, написанных на обычном белом листке бумаги и чтобы разобраться во всей архитектуре давайте начнем с самой базы</p>
+            <p class="text-break">hand_detect_bot (@hand_detect_bot) - это нейронная сеть для распознавания
+            цифр, написанных на обычном белом листке бумаги и чтобы разобраться во всей архитектуре, давайте пошагово разберем те действия,
+                которые мы совершили,
+            для того чтоб наша программа начала работать</p>
         </div>
         <div class ="included">
             <p class="fw-semibold">Обработка изображения</p>
@@ -31,21 +33,53 @@
         <div class="shadow-lg p-3 mb-5 bg-body rounded included">
             <img src="image_processing.png">
         </div>
-        <div class="included"><p class="text-break">Обработка изображения разделиласть на 3 подкатегории : </p>
+        <div class="included"><p class="fst-italic">Обработка изображения разделилась на 3 подкатегории : </p>
             <ul class="nav flex-column">
               <li class="nav-item">
-                <p class="fw-normal">Обрезка изображения: обрезаем изображения до формы квадрата для того чтоб при уменьшении
+                  <p class="fw-normal"><h4 class="font-monospace">Обрезка изображения:</h4><br> обрезаем изображения до формы квадрата для того чтоб при уменьшении
                 наше изображение не сжималось</p>
               </li>
               <li class="nav-item">
-                <p class="fw-normal">Превод изображения из RGB в градацию серого: так как мы обучали нашу нейронную сеть
+                  <p class="fw-normal"><h4 class="font-monospace">Перевод изображения из RGB в градацию серого:</h4> <br>так как мы обучали нашу нейронную сеть
                 на черно-белых изображениях то и на вход мы должны отдать идентичное</p>
               </li>
               <li class="nav-item">
-                <p class="fw-normal">Изменение размера: переводим наше изображение в формат 28 на 28 пикселей</p>
+                  <p class="fw-normal"><h4 class="font-monospace">Изменение размера:</h4> <br>переводим наше изображение в формат 28 на 28 пикселей</p>
               </li>
 
             </ul>
+        </div>
+
+        <div class ="included">
+            <p class="fw-semibold">Нейронная сеть</p>
+            <p class="text-break">Наша нейронная сеть представляет собой
+                <a href="https://faroit.com/keras-docs/1.0.1/getting-started/sequential-model-guide/" class="text-break">Sequental network</a>
+                которая имеет 2 скрытых слоя принимает в себя изображение 28X28 пикселей в формате grayscale
+                <a href="https://www.tensorflow.org/datasets/catalog/mnist" class="text-break">(dataset</a>
+                в формате
+
+                <a href="https://ru.wikipedia.org/wiki/MNIST_(%D0%B1%D0%B0%D0%B7%D0%B0_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85)" class="text-break">MNIST</a>
+                ),а на выходе предсказывает 1 из 10 цифр(от 0 до 9)
+            </p>
+
+        </div>
+        <div class="shadow-lg p-3 mb-5 bg-body rounded included">
+            <img src="sequental_layer.png">
+        </div>
+        <div class="included">
+            <p class="text-break">
+                После того как мы
+                <a href="https://keras.io/api/models/model_training_apis/">скомпилировали</a>
+                и
+                <a href="https://keras.io/api/models/model_training_apis/">натренировали</a>
+                модель
+                мы проверяем ее на степень ошибки с уже отобранными
+                <a href="https://en.wikipedia.org/wiki/Data_validation">данными для валидации</a>
+
+            </p>
+        </div>
+        <div class="shadow-lg p-3 mb-5 bg-body rounded included">
+            <img src="validation.png">
         </div>
     </div>
 </body>
